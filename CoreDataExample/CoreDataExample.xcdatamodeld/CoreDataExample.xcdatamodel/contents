@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="14E46" minimumToolsVersion="Automatic">
+    <entity name="EmpAddress" syncable="YES">
+        <attribute name="street" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="addressToEmp" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EmpDetails" inverseName="empToAddress" inverseEntity="EmpDetails" syncable="YES"/>
+    </entity>
+    <entity name="EmpDetails" representedClassName="EmpDetails" syncable="YES">
+        <attribute name="empID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="empLocation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="empName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="empToAddress" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EmpAddress" inverseName="addressToEmp" inverseEntity="EmpAddress" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="EmpDetails" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="EmpAddress" positionX="-315" positionY="-153" width="128" height="73"/>
+    </elements>
+</model>
