@@ -26,7 +26,7 @@
 }
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [txt1 resignFirstResponder];
+ 
     [txt2 resignFirstResponder];
     [txt3 resignFirstResponder];
 }
